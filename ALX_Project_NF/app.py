@@ -15,6 +15,16 @@ def hello():
     """Renders a sample page."""
     return render_template('MainPage.html')
 
+@app.route('/ProductPage.html')
+def ProdPage():
+    """Renders the Production Page."""
+    return render_template('ProductPage.html')
+
+@app.route('/FullQuotePage.html')
+def FullQPage():
+    """Renders the Production Page."""
+    return render_template('FullQuotePage.html')
+
 if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
