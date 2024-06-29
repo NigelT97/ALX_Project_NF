@@ -31,8 +31,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\css\Footer.css" />
     <Content Include="static\css\headers.css" />
+    <Content Include="templates\AboutPage.html" />
     <Content Include="templates\MainPage.html" />
+    <Content Include="templates\NavBar.html" />
     <Content Include="templates\ProductPage.html" />
     <Content Include="templates\FullQuotePage.html" />
   </ItemGroup>

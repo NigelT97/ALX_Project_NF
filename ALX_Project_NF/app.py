@@ -4,6 +4,7 @@ It contains the definition of routes and views for the application.
 """
 
 from flask import Flask, render_template
+from flask_bookstrap import Bootstrap
 app = Flask(__name__)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
@@ -15,12 +16,17 @@ def hello():
     """Renders a sample page."""
     return render_template('MainPage.html')
 
-@app.route('/ProductPage.html')
+@app.route('/ProductPage')
 def ProdPage():
     """Renders the Production Page."""
     return render_template('ProductPage.html')
 
-@app.route('/FullQuotePage.html')
+@app.route('/FullQuotePage')
+def FullQPage():
+    """Renders the Production Page."""
+    return render_template('FullQuotePage.html')
+
+@app.route('/About')
 def FullQPage():
     """Renders the Production Page."""
     return render_template('FullQuotePage.html')
