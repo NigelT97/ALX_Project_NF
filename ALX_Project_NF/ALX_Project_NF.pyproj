@@ -33,6 +33,17 @@
     <Content Include="requirements.txt" />
     <Content Include="static\css\Footer.css" />
     <Content Include="static\css\headers.css" />
+    <Content Include="static\css\MainPage.css" />
+    <Content Include="static\images\Barbed.jpg" />
+    <Content Include="static\images\Clearvu.jpg" />
+    <Content Include="static\images\dmesh.jpg" />
+    <Content Include="static\images\electricfence.jpg" />
+    <Content Include="static\images\FieldFence.jpg" />
+    <Content Include="static\images\installation.jpg" />
+    <Content Include="static\images\palisade.jpg" />
+    <Content Include="static\images\razorwire.jpg" />
+    <Content Include="static\images\steelworks.jpg" />
+    <Content Include="static\images\weldedmesh.jpg" />
     <Content Include="templates\AboutPage.html" />
     <Content Include="templates\MainPage.html" />
     <Content Include="templates\NavBar.html" />
@@ -53,6 +64,7 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\css\" />
+    <Folder Include="static\images\" />
     <Folder Include="templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />

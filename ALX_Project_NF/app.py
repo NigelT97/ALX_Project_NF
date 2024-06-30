@@ -3,16 +3,16 @@ This script runs the application using a development server.
 It contains the definition of routes and views for the application.
 """
 
+from ensurepip import bootstrap
 from flask import Flask, render_template
-from flask_bookstrap import Bootstrap
+
 app = Flask(__name__)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
 
-
 @app.route('/')
-def hello():
+def home():
     """Renders a sample page."""
     return render_template('MainPage.html')
 
@@ -27,9 +27,9 @@ def FullQPage():
     return render_template('FullQuotePage.html')
 
 @app.route('/About')
-def FullQPage():
+def AboutPage():
     """Renders the Production Page."""
-    return render_template('FullQuotePage.html')
+    return render_template('AboutPage.html')
 
 if __name__ == '__main__':
     import os
