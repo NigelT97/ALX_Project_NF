@@ -5,8 +5,12 @@ It contains the definition of routes and views for the application.
 
 from ensurepip import bootstrap
 from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database_NF.db'
+db = SQLAlchemy(app)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
