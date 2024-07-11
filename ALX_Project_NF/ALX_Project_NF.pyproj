@@ -28,7 +28,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="Models\users.py">
+    <Compile Include="Models\basemodels.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -37,14 +40,22 @@
     <Content Include="static\css\Footer.css" />
     <Content Include="static\css\headers.css" />
     <Content Include="static\css\MainPage.css" />
+    <Content Include="static\css\productionpage.css" />
     <Content Include="static\images\Barbed.jpg" />
     <Content Include="static\images\Clearvu.jpg" />
+    <Content Include="static\images\constrction.jpg" />
+    <Content Include="static\images\cows-in-a-field.jpg" />
     <Content Include="static\images\dmesh.jpg" />
     <Content Include="static\images\electricfence.jpg" />
     <Content Include="static\images\FieldFence.jpg" />
+    <Content Include="static\images\house.jpg" />
+    <Content Include="static\images\industries.jpg" />
     <Content Include="static\images\installation.jpg" />
+    <Content Include="static\images\mines.jpg" />
+    <Content Include="static\images\OIP.jpg" />
     <Content Include="static\images\palisade.jpg" />
     <Content Include="static\images\razorwire.jpg" />
+    <Content Include="static\images\schools.jpg" />
     <Content Include="static\images\steelworks.jpg" />
     <Content Include="static\images\weldedmesh.jpg" />
     <Content Include="templates\AboutPage.html" />
